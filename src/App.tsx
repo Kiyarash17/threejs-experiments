@@ -37,16 +37,16 @@ function App() {
 		// Renderer
 		const renderer = new THREE.WebGLRenderer();
 		renderer.setSize(sizes.width, sizes.height);
-    renderer.setPixelRatio(2);
+		renderer.setPixelRatio(2);
 		containerRef.current?.appendChild(renderer.domElement);
 
 		// Controls
 		const controls = new OrbitControls(camera, renderer.domElement);
 		controls.enableDamping = true;
-    controls.enablePan = false;
-    controls.enableZoom = false;
-    controls.autoRotate = true;
-    controls.autoRotateSpeed = 5;
+		controls.enablePan = false;
+		controls.enableZoom = false;
+		controls.autoRotate = true;
+		controls.autoRotateSpeed = 5;
 
 		// Animation Loop
 		const animate = () => {
@@ -75,7 +75,19 @@ function App() {
 		};
 	}, []);
 
-	return <div ref={containerRef} />;
+	return (
+		<body>
+			<nav>
+				<a href="/">Sphere</a>
+				<ul>
+					<li>Explore</li>
+					<li>Create</li>
+				</ul>
+			</nav>
+      <h1>Give it a Spin!</h1>
+			<div ref={containerRef} />
+		</body>
+	);
 }
 
 export default App;

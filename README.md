@@ -126,10 +126,10 @@ Coming soon...
 ## 🗺️ Roadmap
 
 - [x] Project setup
-- [x] Create scene
-- [x] Add camera
-- [x] Add lighting
-- [x] Render animated sphere
+- [ ] Create scene
+- [ ] Add camera
+- [ ] Add lighting
+- [ ] Render animated sphere
 - [ ] Mouse interaction
 - [ ] OrbitControls
 - [ ] Environment maps
